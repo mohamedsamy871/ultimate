@@ -1,0 +1,17 @@
+-var pageTitle = 'HomePage';
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include layout/meta.pug
+        include layout/styles.pug
+        
+    body
+        .page.home-page
+            include layout/sidebar
+            .content-area 
+                include layout/header
+                .content
+                    h1 #{pageTitle}
+                    
+        include layout/scripts.pug
+
