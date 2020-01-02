@@ -2,16 +2,16 @@
 <!DOCTYPE html>
 html(lang="en")
     head
-        include layout/meta.pug
-        include layout/styles.pug
+        include pug/layout/meta.pug
+        include pug/layout/styles.pug
         
     body
         .page.home-page
-            include layout/sidebar
+            include pug/layout/sidebar
             .content-area 
-                include layout/header
+                include pug/layout/header
                 .content
                     h1 #{pageTitle}
                     
-        include layout/scripts.pug
+        include pug/layout/scripts.pug
 
