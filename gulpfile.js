@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 gulp.task('html',function()
 {
-    return gulp.src('stage/html/pug/*.pug')
+    return gulp.src('stage/html/**/*.pug')
             .pipe(pug({pretty:true}))
             .pipe(gulp.dest('dist'))
             .pipe(liverreload())
