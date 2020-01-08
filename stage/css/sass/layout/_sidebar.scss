@@ -31,6 +31,14 @@
                         text-decoration: none;
                         color: #fff;
                     }
+                    .fa-angle-right{
+                        float: right;
+                        position: relative;
+                        top: 6px;
+                        &.down{
+                            transform:rotate(90deg) !important;
+                        }
+                    }
                 }
             }
             //Main Links
@@ -54,8 +62,10 @@
                    
                 }
             }
+       
             .child-links{
                 position: relative;
+                display: none;
                 &::before{
                     content: '';
                     position: absolute;
