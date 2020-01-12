@@ -1,7 +1,7 @@
 .header 
     i.fas.fa-exchange-alt.toggle-sidebar
     .dropdown.notification-container
-        i.fa.fa-bell#notifications.toggle-notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        i.fa.fa-bell#notifications.toggle-notifications.header-icon(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
         .dropdown-menu(aria-labelledby='notifications')
             .noti-head
                 |Notifications
@@ -9,13 +9,27 @@
             .noti-content
                ul.list-unstyled
                 li
-                    .fa.fa-envelope.fa-lg
+                    i.fa.fa-envelope.fa-lg
                     |You got Email from Mohamed
                 li
-                    .far.fa-money-bill-alt
+                    i.far.fa-money-bill-alt
                     |You got Money from Mohamed
                 li
-                    .fa.fa-envelope.fa-lg
-                    |You got Email from Mohamed
+                    i.far.fa-thumbs-up.fa-lg
+                    |You got like from Mohamed
+                li
+                    i.far.fa-comments.fa-lg
+                    |You got comment from Mohamed
+                       
             .noti-foot
                 a(href="#") View All Notifications
+    i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+    .dropdown.user-container
+        .user-name#user-menu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img(src="imgs/me.jpg").image-responsive.rounded-circle.avatar
+            span.user mohamedsamy
+            i.fa.fa-angle-down.fa-lg.user-icon
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='user-menu')
+            |test11
+        
+            

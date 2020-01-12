@@ -1,20 +1,21 @@
 .header{
     background-color: #ffffff;
     padding: 20px;
+    
     .toggle-sidebar{
         cursor: pointer;
         
     }
+    .header-icon{
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 50%;
+        color:#555;
+        cursor: pointer;
+        margin-left: 15px;
+    }
     .notification-container{
         display: inline-block;
-        margin-left: 20px;
-        .toggle-notifications{
-            background-color: #eee;
-            padding: 10px;
-            border-radius: 50%;
-            color:#555;
-            cursor: pointer;
-        }
         .dropdown-menu{
             min-width: 600px;
             border: none;
@@ -38,7 +39,37 @@
                 }
             }
             .noti-content{
-                padding: 20px;
+                padding: 0 20px;
+                ul{
+                    margin:0;
+                    li{
+                        padding:5px;
+                        font-weight: bold;
+                        color:#777;
+                        i{
+                            padding:10px;
+                            margin-right: 10px;
+                            background-color: #eee;
+                            border-radius: 50%;
+                            width: 42px;
+                            height: 42px;
+                            line-height: 21px;
+                            text-align: center;
+                            &.fa-envelope{
+                                background-color: #badc58;
+                            }
+                            &.fa-money-bill-alt{
+                                background-color: #ff7979;
+                            }
+                            &.fa-thumbs-up{
+                                background-color: #ffbe76;
+                            }
+                            &.fa-comments{
+                                background-color: #f6e58d;
+                            }
+                        }
+                    }
+                }
             }
             .noti-foot{
                 a{
@@ -53,5 +84,40 @@
                
             }
         }
+    }
+    .user-container{
+        float: right;
+        .user-name{
+            cursor: pointer;
+            .avatar{
+                width:40px;
+                height: 40px;
+            }
+            .user{
+                font-weight: bold;
+                color:#777;
+                margin:0 10px;
+            }
+            .user-icon{
+                color:#777;
+            }
+        }
+        .dropdown-menu{
+            min-width: 600px;
+            border: none;
+            padding: 20px;
+            top:10px !important;
+            &::before{
+                content:'';
+                position: absolute;
+                top:-20px;
+                right:20px;
+                border-width: 10px;
+                border-color: transparent transparent #333 transparent;
+                border-style: solid;
+            }
+
+        }   
+
     }
 }
