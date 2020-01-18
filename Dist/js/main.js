@@ -6,7 +6,7 @@ $(function(){
     //show&hide submenu & rotating the angle icon
     $('.toggle-icon').on('click',function(){
         $(this).next(".child-links").slideToggle();
-        $('.fa-angle-right').toggleClass('.down');
+        $('.fa-angle-right').toggleClass('down');
     });
     //open&close fullscreen
     $('.toggle-fullscreen').on('click',function(){
@@ -42,5 +42,9 @@ $(function(){
             document.msExitFullscreen();
             }
         }
+    $('.toggle-setting').on('click',function(){
+      $(this).find('i').toggleClass('fa-spin');
+      $(this).parent().toggleClass('hide-setting');
+    });
 });
 
