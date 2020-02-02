@@ -1,9 +1,13 @@
 .setting-box.hide-setting
     .toggle-setting
-        i.fa.fa-power-off
-    .link-box
-        |backgroung settings
-    .link-box
-        |color settings
-    .link-box
-        |font settings
+        i.fas.fa-cog
+    .link-box.color-options.text-center
+        h4.option-title backgroung settings
+        -var themes = ["green-theme","red-theme","blue-theme","purple-theme"]
+        ul.list-unstyled
+            each theme in themes 
+                li(data-color = theme)
+    .link-box.text-center
+        h4.option-title color settings
+    .link-box.text-center
+        h4.option-title font settings
