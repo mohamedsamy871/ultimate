@@ -17,6 +17,9 @@
         border-radius: 5px 0 0 5px;
         cursor: pointer;
         z-index: -1;
+        .fa-cog{
+            color:#2980b9;
+        }
     }
     &.hide-setting{
         right:-250px;
@@ -36,11 +39,11 @@
                 }
             }
             li{
-                width:24px;
-                height: 24px;
+                width:20px;
+                height: 20px;
                 border-radius: 50%;
                 display: inline-block;
-                opacity: 0.7;
+                opacity: 0.6;
                 cursor: pointer;
                 &.active{
                     opacity:1;

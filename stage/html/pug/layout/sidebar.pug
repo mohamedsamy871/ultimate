@@ -1,7 +1,8 @@
 .sidebar 
-    .logo-area Mr.Designer
+    .logo-area Mr. 
+        span Designer
     ul.links-area.list-unstyled
-        li: a(href="#") Homepage
+        li: a(href="homepage.html" class= pageTitle==='HomePage'?'active':'') Homepage
         li
             a.toggle-icon(href="#") 
                 |Forms
@@ -17,4 +18,5 @@
             ul.child-links.list-unstyled
                 li: a(href="#") Breadcrumbs
                 li: a(href="#") Loading
+        li: a(href="about.html" class= pageTitle==='About'?'active':'') About
 

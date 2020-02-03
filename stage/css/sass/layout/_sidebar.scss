@@ -17,6 +17,9 @@
             font-size: 1.5rem;
             margin-bottom: 30px;
             text-align: center;
+            span{
+                color:#2980b9;
+            }
         }
         .links-area{
             color: #eee;
@@ -59,7 +62,9 @@
                 }
                 &:hover{
                     padding-left: 25px;
-                   
+                }
+                &.active:before{
+                    border-color:#2980b9;
                 }
             }
        

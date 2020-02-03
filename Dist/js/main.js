@@ -42,9 +42,23 @@ $(function(){
             document.msExitFullscreen();
             }
         }
+        //toggle settings box
     $('.toggle-setting').on('click',function(){
       $(this).find('i').toggleClass('fa-spin');
       $(this).parent().toggleClass('hide-setting');
+    });
+      //setting box options
+      var themeclasses = []
+      $('.color-options li').each(function(){
+        themeclasses.push($(this).data('color'));
+      });
+
+    $('.color-options li').on('click',function(){
+      /*$('body').removeClass('red-theme purple-theme green-theme blue-theme');
+      $('body').addClass($(this).data('color'));*/
+      $(this).addClass('active').siblings().removeClass('active');
+      $('body').removeClass(themeclasses.join(" "));
+      $('body').addClass($(this).data('color'));
     });
 });
 

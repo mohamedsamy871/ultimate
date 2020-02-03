@@ -1,0 +1,20 @@
+-var pageTitle = 'About';
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include pug/layout/meta.pug
+        include pug/layout/styles.pug
+        
+    body
+        .page.home-page
+            include pug/components/settingbox
+            include pug/layout/sidebar
+            .content-area 
+                include pug/layout/header
+                .container-fluid
+                    .content
+                        include pug/components/page-head
+
+                    
+        include pug/layout/scripts.pug
+

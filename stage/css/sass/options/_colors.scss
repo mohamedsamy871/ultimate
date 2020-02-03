@@ -1,16 +1,39 @@
-$themes:(
-    green-theme:(color:#27ae60),
-    blue-theme:(color:#2980b9),
-    red-theme:(color:#e74c3c),
-    purple-theme:(color:#8e44ad),
-    yellow-theme:(color:#f1c40f)
-
+$themes: (
+  green-theme: (
+    color: #27ae60
+  ),
+  blue-theme: (
+    color: #2980b9
+  ),
+  red-theme: (
+    color: #e74c3c
+  ),
+  purple-theme: (
+    color: #8e44ad
+  ),
+  yellow-theme: (
+    color: #f1c40f
+  )
 );
 
-@each $theme , $map in $themes {
-    .#{$theme}{
-        .class-name{
-            color:map-get($map:$map , $key: color)
-        }
+@each $theme, $map in $themes {
+  .#{$theme} {
+    .page-head {
+      .page-title {
+        color: map-get($map: $map, $key: color);
+      }
     }
+    .header .user-container .dropdown-menu .user-info h3 {
+      color: map-get($map: $map, $key: color);
+    }
+    .page .sidebar .logo-area span {
+      color: map-get($map: $map, $key: color);
+    }
+    .setting-box .toggle-setting .fa-cog {
+      color: map-get($map: $map, $key: color);
+    }
+    .page .sidebar .links-area > li > a.active:before {
+      color: map-get($map: $map, $key: color);
+    }
+  }
 }
